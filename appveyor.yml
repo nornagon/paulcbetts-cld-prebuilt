@@ -1,0 +1,18 @@
+os: Visual Studio 2014 CTP4
+version: "{build}"
+build: off
+platform:
+  - x86
+  - x64
+
+environment:
+  matrix:
+    - nodejs_version: "8"
+
+install:
+  - ps: Install-Product node $env:nodejs_version $env:nodejs_arch
+  - set PATH=%APPDATA%\npm;%APPVEYOR_BUILD_FOLDER%\node_modules\.bin;%PATH%
+  - npm install --msvs_version=2013
+
+test_script:
+  - npm test

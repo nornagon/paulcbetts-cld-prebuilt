@@ -1,0 +1,70 @@
+{
+  "author": {
+    "name": "Blagovest Dachev",
+    "email": "blago@dachev.com",
+    "url": "http://www.dachev.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dachev/cld/issues"
+  },
+  "contributors": [
+    {
+      "name": "Lovell Fuller",
+      "email": "npm@lovell.info"
+    }
+  ],
+  "dependencies": {
+    "glob": "^5.0.10",
+    "nan": "^2.0.5",
+    "prebuild-install": "^2.4.1",
+    "rimraf": "^2.4.0",
+    "underscore": "^1.6.0"
+  },
+  "description": "Language detection for Javascript. Based on the CLD2 (Compact Language Detector) library from Google. Highly optimized for space and speed. Runs about 10x faster than other libraries. Detects over 160 languages. Full test coverage. Runs on Linux, OS X, an",
+  "devDependencies": {
+    "prebuild": "^7.0.0",
+    "prebuild-ci": "^2.2.3"
+  },
+  "directories": {},
+  "engines": {
+    "iojs": ">=1.0.0",
+    "node": ">=0.10.0"
+  },
+  "gitHead": "181870240919d98438e75dbeb6eaad8992a0d4c8",
+  "gypfile": true,
+  "homepage": "https://github.com/dachev/cld#readme",
+  "keywords": [
+    "language",
+    "detect",
+    "language detection",
+    "cld",
+    "cld2"
+  ],
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "main": "./index",
+  "maintainers": [
+    {
+      "name": "paulcbetts",
+      "email": "paul@paulbetts.org"
+    }
+  ],
+  "name": "@paulcbetts/cld",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dachev/cld.git"
+  },
+  "scripts": {
+    "postinstall": "node bin/postinstall.js",
+    "install": "prebuild-install || node-gyp rebuild",
+    "test": "node test/runner.js && node ./prebuild-ci",
+    "prebuild": "prebuild --all --strip --verbose"
+  },
+  "version": "2.4.6"
+}
