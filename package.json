@@ -58,7 +58,7 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dachev/cld.git"
+    "url": "git://github.com/ssbc/paulcbetts-cld-prebuilt.git"
   },
   "scripts": {
     "postinstall": "node bin/postinstall.js",
@@ -66,5 +66,5 @@
     "test": "node ./prebuild-ci",
     "prebuild": "prebuild --all --strip --verbose"
   },
-  "version": "2.4.6-b"
+  "version": "2.4.6"
 }
