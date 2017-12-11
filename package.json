@@ -63,8 +63,8 @@
   "scripts": {
     "postinstall": "node bin/postinstall.js",
     "install": "prebuild-install || node-gyp rebuild",
-    "test": "node test/runner.js && node ./prebuild-ci",
+    "test": "node ./prebuild-ci",
     "prebuild": "prebuild --all --strip --verbose"
   },
-  "version": "2.4.6-a"
+  "version": "2.4.6-b"
 }
