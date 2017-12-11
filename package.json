@@ -66,5 +66,5 @@
     "test": "node test/runner.js && node ./prebuild-ci",
     "prebuild": "prebuild --all --strip --verbose"
   },
-  "version": "2.4.6"
+  "version": "2.4.6-a"
 }
